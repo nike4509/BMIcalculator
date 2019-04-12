@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#68829E"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Height: "
+        android:textSize="30dp"
+        android:layout_margin="15sp"
+        android:id="@+id/height"
+        android:textColor="#FFFFFF"
+        />
+    <EditText
+        android:id="@+id/enter_height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your height"
+        android:inputType="numberDecimal"
+        android:layout_toRightOf="@+id/height"
+        android:textColor="#FFFFFF"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(centimeters)"
+        android:layout_below="@+id/height"
+        android:layout_toRightOf="@+id/height"
+        android:id="@+id/centimeter"
+        android:textColor="#FFFFFF"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Height: "
+        android:textSize="30dp"
+        android:layout_margin="15sp"
+        android:id="@+id/weight"
+        android:layout_below="@+id/centimeter"
+        android:textColor="#FFFFFF"
+        />
+
+    <EditText
+        android:id="@+id/enter_weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your weight"
+        android:layout_below="@+id/centimeter"
+        android:layout_toRightOf="@+id/weight"
+        android:textColor="#FFFFFF"
+
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(kilograms)"
+        android:id="@+id/kg"
+        android:layout_below="@+id/enter_weight"
+        android:layout_toRightOf="@+id/weight"
+        android:textColor="#FFFFFF"
+
+        />
+<Button
+    android:id="@+id/btn_calcbmi"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+    android:text="Calculate BMI"
+    android:background="#505160"
+        android:textColor="#FFFFFF"
+    />
+
+    <TextView
+        android:id="@+id/disp_bmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Your BMI"
+        android:layout_below="@+id/btn_calcbmi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30sp"
+        android:textColor="#FFFFFF"
+        />
+
+</RelativeLayout>
